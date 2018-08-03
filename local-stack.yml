@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+
+  nginx-video:
+    image: tirasmuturi/nginxvideo:latest
+    ports:
+      - '8060:80'
+      - '1935:1935'
+    deploy:
+      mode: replicated
+    command: /usr/local/nginx-streaming/sbin/nginx
+    volumes:
+      - type: volume
+        source: mp4
+        target: /var/mp4s  
+    volumes:
+      - type: volume
+        source: www
+        target: /var/www     
+volumes:
+  mp4:
+  www:

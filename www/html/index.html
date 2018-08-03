@@ -7,7 +7,9 @@
 
     <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
-    <script src="scripts/videojs-flash.min.js"></script>
+    <!-- <script src="scripts/videojs-flash.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/videojs-flash@2/dist/videojs-flash.min.js"></script>
+
    
   </head>
 
@@ -19,7 +21,7 @@
       <video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
 	     controls preload="none" poster='pics/bbb.png'
 	     data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
-	<source src="rtmp://localhost:1935/vod2/bbb.mp4" type='rtmp/mp4' />
+	<source src="rtmp://127.0.0.1:1935/vod2/sample.mp4" type='rtmp/mp4' />
 	      </video>
       </div>
   </body>

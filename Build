@@ -1,4 +1,4 @@
-docker stop videoserv
-docker rm videoserv
-docker build -t video .
-docker run -d -p 1935:1935 -p 80:80 --name videoserv -v $PWD/mp4:/var/mp4s  -v $PWD/www:/var/www video /usr/local/nginx-streaming/sbin/nginx
+docker stop nginx-video-server
+docker rm nginx-video-server
+docker build -t tirasmuturi/nginxvideo .
+docker run -d -p 1935:1935 -p 8060:80 --name nginx-video-server -v $PWD/mp4:/var/mp4s  -v $PWD/www:/var/www tirasmuturi/nginxvideo /usr/local/nginx-streaming/sbin/nginx
