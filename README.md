@@ -28,7 +28,7 @@ video stats are in 127.0.0.1:8060/stats
 ##How to test videos
 
 // test using the vlc console N.B change the 127.0.0.1 to suite yout server public ip
-
+<b>
 rtmp://127.0.0.1:1935/vod2/City_Boy_[Bawazir]_-_Bad_Gyal_(Official_4K_Video).mp4
 rtmp://127.0.0.1:1935/vod2/Davido_-_Dengeme_Ft._Stunnah_Gee_(Official_Video).mp4
 rtmp://127.0.0.1:1935/vod2/Diplo,_French_Montana_&_Lil_Pump_ft._Zhavia_-_Welcome_To_The_Party_(Official_Vid_1.mp4
@@ -51,7 +51,7 @@ rtmp://127.0.0.1:1935/vod2/YK_Osiris_-_Timing.mp4
 rtmp://127.0.0.1:1935/vod2/ZIKKI_ft_TARRUS_RILEY_-_KAMATA_(OFFICIAL_VIDEO).mp4
 
 
-
+</b>
 
 // test  videos using your terminal and vlcgit status
 
