@@ -11,13 +11,6 @@ services:
       mode: replicated
     command: /usr/local/nginx-streaming/sbin/nginx
     volumes:
-      - type: volume
-        source: mp4
-        target: /var/mp4s  
-    volumes:
-      - type: volume
-        source: www
-        target: /var/www     
-volumes:
-  mp4:
-  www:
+      - /home/tiras/Docker/NginxVideo/mp4:/var/mp4s  
+      - /home/tiras/Docker/NginxVideo/www:/var/www
+      
